@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/BackgroundParallax/Background.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Resources/Tilemap/floor.tres" type="TileSet" id=2]
 [ext_resource path="res://Resources/Tilemap/decoration.tres" type="TileSet" id=3]
 [ext_resource path="res://Resources/Tilemap/grass.tres" type="TileSet" id=4]
+[ext_resource path="res://Scenes/Player/player_scene.tscn" type="PackedScene" id=5]
 
 [node name="World" type="Node2D"]
 
@@ -28,3 +29,5 @@ tile_set = ExtResource( 4 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 458813, 0, 0, 1114114, 0, 0, 1114115, 1, 0, 1114116, 1, 0, 1114117, 1, 0, 1114118, 1, 0, 1114119, 1, 0, 1114120, 1, 0, 1114121, 1, 0, 1114122, 1, 0, 1114124, 2, 0, 1114125, 2, 0, 1114171, 0, 0, 1114174, 0, 0, 1900552, 2, 0, 1900553, 1, 0, 1900554, 1, 0, 1900555, 1, 0, 1900556, 1, 0, 1900557, 1, 0, 1900558, 1, 0, 1900559, 1, 0, 1900560, 1, 0, 1900561, 0, 0, 2031658, 0, 0, 2031659, 0, 0, 2031661, 1, 0, 2162728, 2, 0, 2162739, 2, 0, 2162753, 2, 0, 2555912, 1, 0, 2555913, 1, 0, 2555914, 1, 0, 2555915, 1, 0, 2555930, 1, 0, 2555931, 1, 0, 2555932, 1, 0, 2949172, 0, 0, 2949173, 0, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
