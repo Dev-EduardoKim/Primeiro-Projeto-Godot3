@@ -7,6 +7,7 @@ export(NodePath) onready var anima = get_node(anima) as AnimationPlayer
 func animacao(direction : Vector2):
 	to_turn(direction)
 	horizontal_env(direction)
+	vertical_env(direction)
 	
 	
 func to_turn(direction : Vector2):
@@ -21,3 +22,10 @@ func horizontal_env(direction : Vector2) :
 		anima.play("run")
 	else:
 		anima.play("idle")
+
+func vertical_env(direction : Vector2) :
+	
+	if direction.y < 0 :
+		anima.play("jump")
+	elif direction.y > 0 :
+		anima.play("fall")
